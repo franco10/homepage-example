@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang="en" class="all">
+
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+        <title>Franco's website</title>
+    </head>
+
+    <body id="body" class="all">
+
+        <div class="darkmode">
+            <p class= darkmode-title>Dark Mode</p>
+            <button id="darkmode-on" type="button" class="btn btn-success">ON</button>
+            <button id="darkmode-off" type="button" class="btn btn-danger">OFF</button>
+        </div>
+
+
+        <script>
+        
+        document.querySelector('#darkmode-on').addEventListener('click', function()
+        {
+            var items = document.getElementsByClassName("all");
+            var len =  items.length;
+            
+            for(var i=0 ; i<len; i++){
+                items[i].style.backgroundColor="darkblue";
+                items[i].style.color="white";
+            }
+            document.getElementById("title").style.color = "lightgray";
+            document.getElementById("here").style.color = "lightgray";
+            document.getElementById("here").style.backgroundColor = "darkblue";
+        });
+
+        document.querySelector('#darkmode-off').addEventListener('click', function()
+        {
+            var items = document.getElementsByClassName("all");
+            var len =  items.length;
+            
+            for(var i=0 ; i<len; i++){
+                items[i].style.backgroundColor="whitesmoke";
+                items[i].style.color="dodgerblue";
+            }
+            document.getElementById("title").style.color = "blue";
+            document.getElementById("here").style.color = "blue";
+            document.getElementById("here").style.backgroundColor = "whitesmoke";
+        });
+
+        </script>
+
+        <header id="header" class="all">
+            <h1 id="title" class="all">Franco's website</h1>
+            <br>
+        </header>
+
+        <section id="section-1" class="all">
+
+            <h2 id="h2" class="all">Hello, my name is Franco and welcome to my website.</h2>
+            <br>
+            <h3 id="h3" class="all">On this site I want to share 3 of my hobbies:</h3>
+
+            <ul class="all">
+                <li class="all"><a class="all" href="soccer.html">Soccer</a></li>
+                <li class="all"><a class="all" href="gaming.html">Gaming</a></li>
+                <li class="all"><a class="all" href="traveling.html">Traveling</a></li>
+            </ul>
+    
+            <table id="section-2" class="all">
+                <tr class="all">
+                    <th class="all"><a class="all" href="soccer.html"><img class="image-section" src="img/soccer.jpg" alt="Soccer" height="300"></a></th>
+                    <th class="all"><a class="all" href="gaming.html"><img class="image-section" src="img/gaming.jpg" alt="Gaming" height="300"></a></th>
+                    <th class="all"><a class="all" href="traveling.html"><img class="image-section" src="img/traveling.jpg" alt="Traveling" height="300"></a></th>
+                </tr>
+            </table>
+            
+
+        </section>
+
+        
+        
+        <footer id="footer" class="all">
+            <br>
+            You can contact me by clicking <a id="here" href="mailto:franco@mail.com">here</a>
+        </footer>
+
+    </body>
+</html>

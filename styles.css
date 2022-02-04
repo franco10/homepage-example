@@ -1,0 +1,123 @@
+* {
+    font-size: 20px;
+    color: dodgerblue;
+    background: whitesmoke;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.all {
+    background: whitesmoke;
+}
+
+.darkmode {
+    background: DarkSlateGrey;
+    width: 150px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    padding-bottom: 10px;
+}
+.darkmode-title {
+    background: DarkSlateGrey;
+    color: white;
+}
+button {
+    color: black;
+    background-color: whitesmoke;
+}
+
+
+h1 {
+    font-size: 5rem;
+    padding-top: 20px;
+    color: blue;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+#subtitle {
+    color: purple;
+}
+
+ul {
+    list-style: none;
+}
+
+
+
+#section-1 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    border: none;
+}
+
+#section-2 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-collapse: collapse;
+    text-align: center;
+    border: none;
+    margin-top: 20px;
+}
+
+.image-section {
+    border-color: dodgerblue;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 50%;
+    padding-top: 3px;
+    padding-right: 3px;
+    padding-bottom: 3px;
+    padding-left: 3px;
+    margin: 30px;
+}
+
+#here {
+    color: blue;
+}
+
+.images {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+@media (max-width: 1100px) {
+    h1 {
+        font-size: 4rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    h3 {
+        font-size: 1rem;
+    }
+    #section-2 {
+        position: absolute;
+        right: 50000px;
+    }
+}
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1rem;
+    }
+    h3 {
+        font-size: 1rem;
+    }
+}

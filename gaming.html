@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="en" class="all">
+
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+        <title>Franco's website</title>
+    </head>
+
+    <body class="all">
+
+        <div class="darkmode">
+            <p class= darkmode-title>Dark Mode</p>
+            <button id="darkmode-on" type="button" class="btn btn-success">ON</button>
+            <button id="darkmode-off" type="button" class="btn btn-danger">OFF</button>
+        </div>
+
+
+        <script>
+        
+        document.querySelector('#darkmode-on').addEventListener('click', function()
+        {
+            var items = document.getElementsByClassName("all");
+            var len =  items.length;
+            
+            for(var i=0 ; i<len; i++){
+                items[i].style.backgroundColor="darkblue";
+                items[i].style.color="white";
+            }
+            document.getElementById("title").style.color = "lightgray";
+            document.getElementById("here").style.color = "lightgray";
+            document.getElementById("here").style.backgroundColor = "darkblue";
+
+        });
+
+        document.querySelector('#darkmode-off').addEventListener('click', function()
+        {
+            var items = document.getElementsByClassName("all");
+            var len =  items.length;
+            
+            for(var i=0 ; i<len; i++){
+                items[i].style.backgroundColor="whitesmoke";
+                items[i].style.color="dodgerblue";
+            }
+            document.getElementById("title").style.color = "blue";
+            document.getElementById("subtitle").style.color = "purple";
+            document.getElementById("here").style.color = "blue";
+            document.getElementById("here").style.backgroundColor = "whitesmoke";
+
+        });
+
+        </script>
+
+        <header class="all">
+            <h1 id="title" class="all">Franco's website</h1>
+            <br>
+        </header>
+
+        <section class="all">
+            <h2 id="subtitle" class="all">Gaming</h2>
+            <p class="all">The first console I owned was the Super Nintendo. Then I had Play Station 1, Play Station 2 and currently I use the computer.</p>
+            <br>
+            <h3 class="all">Favorite game:</h3>
+            <p class="all">My favorite video game is The Elder Scroll: Skyrim. I really like the setting and the story.</p>
+            <img src="img/skyrim.jpg" alt="Skyrim" width="800">
+
+         
+
+        </section>
+        
+        <footer class="all">
+            <br>
+            Return to <a class="all" href="index.html">HOME</a> - Go to <a class="all" href="soccer.html">SOCCER</a> - Go to <a class="all" href="traveling.html">TRAVELING</a>
+            <br><br>
+            You can contact me by clicking <a id="here" href="mailto:franco@mail.com">here</a>
+        </footer>
+
+    </body>
+</html>
